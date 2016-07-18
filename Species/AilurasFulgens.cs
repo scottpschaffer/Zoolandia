@@ -5,14 +5,24 @@ using System;
 
         public class AilurusFulgens : Animal
         {
+            public string Color = "red"; 
             public AilurusFulgens(string name) : base(name)
             {
-                // don't need to do anything
+                this.Tail = true;
+                Random r = new Random();
+                this.Weight = r.Next(8, 14);
+                this.Height = (float)(r.Next(15, 19));
+                this.Feet = 4;
             }
             public override string Eat(int numberOfFoodZ)
             {
                 string animalEat = base.Eat(3);
                 return animalEat +  " Nom nom nom";
+            }
+
+            public override string Move(int distance)
+            {
+                return this.Name + " has walked " + distance.ToString() + " miles.";
             }
 
             public string Eat(){

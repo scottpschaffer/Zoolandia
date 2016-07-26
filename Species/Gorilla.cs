@@ -3,11 +3,12 @@ using System;
     namespace Zoolandia.Species
     {
         
-        public class GorillaBeringeiBeringei : Animal
+        public class Gorilla : Animal
         {
             public int fingers = 5;
+            public int Teeth {get; set;}
 
-            public GorillaBeringeiBeringei(string name) : base(name)
+            public Gorilla(string name) : base(name)
             {
                 this.Tail = false;
                 Random r = new Random();
@@ -15,6 +16,13 @@ using System;
                 this.Height = (float)(r.Next(5, 6));
                 this.Feet = 2;
             }
+
+            public Gorilla(int teeth) : base()
+            {
+                this.Teeth = teeth;
+                this.Name = "Jeffrey";
+            }
+
             public override string Eat(int numberOfFoodZ)
             {
                 

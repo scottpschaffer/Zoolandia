@@ -8,6 +8,12 @@ namespace Zoolandia
         {
             this.Name = name;
         }
+
+        public Animal()
+        {
+
+        }
+
         public bool Tail {get; set;}
         public string Name {get; set;}
         public int Weight {get; set;}

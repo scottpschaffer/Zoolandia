@@ -3,17 +3,18 @@ using System;
     namespace Zoolandia.Species
     {
         
-        public class BalaenopteraMusculus : Animal
+        public class Balaenoptera : Animal
         {
             public int fins = 2;
 
-            public BalaenopteraMusculus(string name) : base(name)
+            public Balaenoptera(string name) : base(name)
             {
                 this.Tail = true;
                 this.Weight = 300000;
                 this.Height = 98;
                 this.Feet = 0;
             }
+
             public override string Eat(int numberOfFoodZ)
             {
                 

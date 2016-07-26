@@ -3,10 +3,9 @@ using System;
     namespace Zoolandia.Species
     {
 
-        public class AilurusFulgens : Animal
-        {
-            public string Color = "red"; 
-            public AilurusFulgens(string name) : base(name)
+        public class Ailurus : Animal
+        { 
+            public Ailurus(string name) : base(name)
             {
                 this.Tail = true;
                 Random r = new Random();
@@ -25,7 +24,7 @@ using System;
                 return this.Name + " has walked " + distance.ToString() + " miles.";
             }
 
-            public string Eat(){
+            public virtual string Eat(){
                 return "I don't know what I just ate, but it was good";
             }
 
@@ -39,5 +38,6 @@ using System;
             {
                 return "Welcome " + this.Name;
             }
-        }   
+        } 
+
     }

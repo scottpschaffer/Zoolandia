@@ -1,5 +1,6 @@
 ﻿using System;
 using Zoolandia.Species;
+using System.IO;
 
 namespace Zoolandia
 {
@@ -9,14 +10,14 @@ namespace Zoolandia
         {
             Console.WriteLine("Hello World!");
 
-            AilurusFulgens redPanda = new AilurusFulgens("Steve");
+            Fulgens redPanda = new Fulgens("Steve");
             redPanda.Name = "Steve";
             string response = redPanda.Eat(5);
 
             Console.WriteLine(redPanda.Name + " says " + response);
             
             
-            AilurusFulgens Joe = new AilurusFulgens("Steve");
+            Fulgens Joe = new Fulgens("Steve");
             Console.WriteLine(Joe.Welcome("Joe"));
             Console.WriteLine(Joe.Name);
             Console.WriteLine(Joe.Name + " Weighs " + Joe.Weight + " lbs.");
@@ -26,7 +27,7 @@ namespace Zoolandia
             Console.WriteLine(Joe.Move(23));
             Console.ReadLine();
 
-            DicerosBicornis rhino = new DicerosBicornis("Fred");
+            Bicornis rhino = new Bicornis("Fred");
             rhino.Welcome();
             Console.WriteLine(rhino.Name + " Weighs " + rhino.Weight + " lbs.");
             Console.WriteLine(rhino.Name + " is " + rhino.Height + " feet long.");
@@ -35,16 +36,25 @@ namespace Zoolandia
             Console.WriteLine(rhino.Move(11));
             Console.WriteLine(rhino.Eat(5));
 
-            GorillaBeringeiBeringei Ape = new GorillaBeringeiBeringei("Mike");
+            Bicornis rhino2 = new Bicornis(3, "Anthony");
+            Console.WriteLine(rhino2.Name + " has a cuteness of " + rhino2.CutenessFactor + " out of 10!");
+
+            Beringei Ape = new Beringei("Mike");
             Console.WriteLine(Ape.Welcome());
             Console.WriteLine(Ape.Name + " Weighs " + Ape.Weight + " lbs.");
             Console.WriteLine(Ape.Name + " is " + Ape.Height + " feet long.");
-            Console.WriteLine("Is it true that " + Ape.Name + " has a tail? " + Ape.Tail.ToString());
+            Console.WriteLine("Is it true that " + Ape.Name + " has a tail? " + Ape.GetType().Name);
             Console.WriteLine(Ape.Name + " has " + Ape.fingers + " fingers on each hand");
             Console.WriteLine(Ape.Move(33));
             Console.WriteLine(Ape.Eat(2));
+            Console.WriteLine(Ape.Name + " is a " + typeof(Beringei));
             
-            BalaenopteraMusculus whale = new BalaenopteraMusculus("Andrea");
+            Beringei Ape2 = new Beringei(32);
+            Console.WriteLine(Ape2.Name + " has " + Ape2.Teeth + " teeth");
+
+            Console.WriteLine("Enter the name for your Blue Whale: ");
+            string bwName = Console.ReadLine();
+            Musculus whale = new Musculus(bwName);
             Console.WriteLine(whale.Welcome());
             Console.WriteLine(whale.Name + " Weighs " + whale.Weight + " lbs.");
             Console.WriteLine(whale.Name + " is " + whale.Height + " feet long.");
@@ -52,6 +62,17 @@ namespace Zoolandia
             Console.WriteLine(whale.Name + " has " + whale.fins + " fins ");
             Console.WriteLine(whale.Move(444));
             Console.WriteLine(whale.Eat(200));
+
+            Abelii Orangutan = new Abelii("Ethel");
+            Console.WriteLine(Orangutan.Name + " is colored " + Orangutan.Color);
+            Console.WriteLine(Orangutan.Name + " weighs " + Orangutan.Weight + " lbs. and is " + Orangutan.Height + " feet tall");
+            Console.WriteLine(Orangutan.Eat(14) + " " + Orangutan.Move(22));
+
+            Mississippiensis Alligator = new Mississippiensis("Lars");
+            Console.WriteLine(Alligator.Name + " is colored " + Alligator);
+            Console.WriteLine(Alligator.Name + " is " + Alligator.Weight + " lbs. and is " + Alligator.Height + " feet long");
+
+            
         }
     }
 }

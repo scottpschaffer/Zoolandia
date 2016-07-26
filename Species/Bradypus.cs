@@ -8,8 +8,8 @@ using System;
         	{
 			public Bradypus(string name) : base(name)
 			{
-				this.tail = false;
-				this.feet = 4;
+				this.Tail = false;
+				this.Feet = 4;
 			}
 
 			public override String Move(int distance)

@@ -12,11 +12,13 @@ using System;
 				this.Feet = 4;
 				this.Tail = true;
 			}
+
+			public override String Move(int distance)
+			{
+				return "I loped " + distance + " miles through the forest.";
+			}
 		}
 
 
-		public override String Move(int distance)
-		{
-			return "I loped " + distance + " miles through the forest.";
-		}
+
 	}

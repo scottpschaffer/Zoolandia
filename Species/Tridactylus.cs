@@ -8,6 +8,7 @@ using System;
 
 
 			public string Color;
+			public int Toes;
 
 			public Tridactylus (string name) : base(name)
 			{
@@ -22,6 +23,4 @@ using System;
 				return "I am on a strict diet of " + numFood + " blades of grass";
 			}
 		}
-
-
 	}

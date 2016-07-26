@@ -13,7 +13,7 @@ using System;
 			{
 				this.Color = "brown";
 				this.Weight = 10;
-				this.Height = 2.5;
+				this.Height = 2.5F;
 			}
 
 			public override String Eat(int numFood)

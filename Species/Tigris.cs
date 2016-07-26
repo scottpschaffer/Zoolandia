@@ -12,7 +12,7 @@ using System;
 			{
 				this.Color = "orange with black and white stripes";
 				this.Weight = 310;
-				this.Height = 6.2;
+				this.Height = 6.2F;
 			}
 
 			public override string Eat(int numFood)

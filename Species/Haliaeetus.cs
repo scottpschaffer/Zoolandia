@@ -8,7 +8,7 @@ using System;
 
 			public Haliaeetus(string name) : base(name)
 			{
-				this.Wingspan = 7.5;
+				this.Wingspan = 7.5F;
 				this.Feet = 2;
 				this.Tail = true;
 			}

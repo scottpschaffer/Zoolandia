@@ -7,7 +7,7 @@ using System;
         
 	public class Carassius : Animal
 
-        {
+    {
 
 		public Carassius(string name) : base(name)
 		{
@@ -21,7 +21,4 @@ using System;
 			return "I swam " + distance + " miles non-stop!";
 		}
 	}
-
-
-
-    }
+}

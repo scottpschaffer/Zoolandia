@@ -9,8 +9,8 @@ using System;
 
 			public Quagga(string name) : base(name)
 			{
-				this.Color = "White with black stripes"
-				this.weight = 190;
+				this.Color = "White with black stripes";
+				this.Weight = 190;
 				this.Height = 6.75F;
 			}
 

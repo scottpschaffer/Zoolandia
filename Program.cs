@@ -23,7 +23,7 @@ namespace Zoolandia
             Console.WriteLine(Joe.Name + " Weighs " + Joe.Weight + " lbs.");
             Console.WriteLine(Joe.Name + " is " + Joe.Height + " inches long.");
             Console.WriteLine("Is it true that " + Joe.Name + " has a tail? " + Joe.Tail.ToString());
-            Console.WriteLine(Joe.Name + "is " + Joe.Color);
+            Console.WriteLine(Joe.Name + " is " + Joe.Color);
             Console.WriteLine(Joe.Move(23));
             Console.ReadLine();
 
@@ -72,7 +72,51 @@ namespace Zoolandia
             Console.WriteLine(Alligator.Name + " is colored " + Alligator);
             Console.WriteLine(Alligator.Name + " is " + Alligator.Weight + " lbs. and is " + Alligator.Height + " feet long");
 
-            
+            Quagga Zebra = new Quagga("Daniel");
+            Console.WriteLine(Zebra.Name + " is colored " + Zebra.Color);
+            Console.WriteLine(Zebra.Name + " is " + Zebra.Weight + " lbs. and is " + Zebra.Height + " feet long");
+            Console.WriteLine(Zebra.Eat(3) + " & " + Zebra.Move(90));
+
+            Tigris Tiger = new Tigris("Tony");
+            Console.WriteLine(Tiger.Name + " is colored " + Tiger.Color);
+            Console.WriteLine(Tiger.Name + " is " + Tiger.Weight + " lbs. and is " + Tiger.Height + " feet long");
+            Console.WriteLine(Tiger.Eat(6) + " & " + Tiger.Move(40));
+
+            Carolina Turtle = new Carolina("Timmy");
+            Console.WriteLine(Turtle.Name + " is colored " + Turtle.Color);
+            Console.WriteLine(Turtle.Name + " is " + Turtle.Weight + " lbs. and is " + Turtle.Height + " feet long");
+            Console.WriteLine(Turtle.Eat(12) + " & " + Turtle.Move(3));
+
+            Tridactylus Sloth = new Tridactylus("Juan");
+            Console.WriteLine(Sloth.Name + " is colored " + Sloth.Color);
+            Console.WriteLine(Sloth.Name + " is " + Sloth.Weight + " lbs. and is " + Sloth.Height + " feet long");
+            Console.WriteLine(Sloth.Eat(4) + " & " + Sloth.Move(7));
+
+            Leucocephalus Eagle = new Leucocephalus("Sam");
+            Console.WriteLine(Eagle.Name + " is colored " + Eagle.Color);
+            Console.WriteLine(Eagle.Name + " is " + Eagle.Weight + " lbs. and is " + Eagle.Height + " feet long");
+            Console.WriteLine(Eagle.Eat(3) + " & " + Eagle.Move(90));
+
+            Auratus Goldfish = new Auratus("Nemo");
+            Console.WriteLine(Goldfish.Name + " is colored " + Goldfish.Color);
+            Console.WriteLine(Goldfish.Name + " is " + Goldfish.Weight + " lbs. and is " + Goldfish.Height + " feet long");
+            Console.WriteLine(Goldfish.Eat(3) + " & " + Goldfish.Move(90));
+
+            Guttulatus SeaHorse = new Guttulatus("Alan");
+            Console.WriteLine(SeaHorse.Name + " is colored " + SeaHorse.Color);
+            Console.WriteLine(SeaHorse.Name + " is " + SeaHorse.Weight + " lbs. and is " + SeaHorse.Height + " feet long");
+            Console.WriteLine(SeaHorse.Eat(3) + " & " + SeaHorse.Move(90));
+
+            Lupus Wolf = new Lupus("Fritz");
+            Console.WriteLine(Wolf.Name + " is colored " + Wolf.Color);
+            Console.WriteLine(Wolf.Name + " is " + Wolf.Weight + " lbs. and is " + Wolf.Height + " feet long");
+            Console.WriteLine(Wolf.Eat(3) + " & " + Wolf.Move(90));
+
+            Occitanus Scorpion = new Occitanus("Leonard");
+            Console.WriteLine(Scorpion.Name + " is colored " + Scorpion.Color);
+            Console.WriteLine(Scorpion.Name + " is " + Scorpion.Weight + " grams. and is " + Scorpion.Height + " cm long");
+            Console.WriteLine(Scorpion.Eat(3) + " & " + Scorpion.Move(90));
+
         }
     }
 }

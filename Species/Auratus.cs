@@ -11,8 +11,8 @@ using System;
 			public Auratus (string name) : base(name)
 			{
 				this.Color = "gold";
-				this.weight = 1;
-				this.height = 0.2F;
+				this.Weight = 1;
+				this.Height = 0.2F;
 			}
 
 			public override String Eat(int numFood)

@@ -4,6 +4,8 @@ using System;
     {
         public class Beringei : Gorilla
         {
+
+            public string commonName = "Mountain Gorilla";
             public Beringei(string name) : base(name)
             {
                 

@@ -5,6 +5,7 @@ using System;
         public class Mississippiensis : Alligator
         {
             public String Color;
+            public string commonName = "Alligator";
 
             public Mississippiensis(string name) : base(name)
             {

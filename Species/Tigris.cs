@@ -7,6 +7,7 @@ using System;
 		public class Tigris : Panthera
 		{
 			public string Color;
+			public string commonName = "Bengal Tiger";
 
 			public Tigris(string name) : base(name)
 			{

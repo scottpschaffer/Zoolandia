@@ -20,6 +20,8 @@ namespace Zoolandia
         public float Height {get; set;}
         public int Feet {get; set;}
 
+        //public string commonName {get; set;}
+
         public virtual string Move(int distance)
         {
             return this.Name + " has moved " + distance.ToString() + " miles.";

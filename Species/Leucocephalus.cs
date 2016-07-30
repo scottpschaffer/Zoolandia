@@ -7,6 +7,7 @@ using System;
 
 
 			public string Color;
+			public string commonName = "Bald Eagle";
 
 			public Leucocephalus(string name) : base(name)
 			{

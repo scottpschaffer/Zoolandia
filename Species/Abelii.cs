@@ -5,6 +5,7 @@ using System;
         public class Abelii : Pongo
         {
             public string Color;
+            public string commonName = "Orangutan";
 
             public Abelii(string name) : base(name)
             {

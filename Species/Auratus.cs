@@ -7,6 +7,7 @@ using System;
 
 		{
 			public String Color;
+			public string commonName = "Goldfish";
 
 			public Auratus (string name) : base(name)
 			{

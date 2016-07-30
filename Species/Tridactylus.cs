@@ -9,6 +9,7 @@ using System;
 
 			public string Color;
 			public int Toes;
+			public string commonName = "Three-Toed Sloth";
 
 			public Tridactylus (string name) : base(name)
 			{

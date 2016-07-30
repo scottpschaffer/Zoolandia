@@ -7,6 +7,7 @@ using System;
 		public class Guttulatus : Hippocampus
 		{
 			public string Color;
+			public string commonName = "Seahorse";
 
 			public Guttulatus(string name) : base(name)
 			{

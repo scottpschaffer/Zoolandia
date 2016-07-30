@@ -8,6 +8,7 @@ using System;
 
 
 			public String Color;
+			public string commonName = "Box Turtle";
 
 			public Carolina(string name) : base(name)
 			{

@@ -6,6 +6,7 @@ using System;
 
 
 			public string Color;
+			public string commonName = "Plains Zebra";
 
 			public Quagga(string name) : base(name)
 			{

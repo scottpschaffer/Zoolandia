@@ -54,14 +54,14 @@ namespace Zoolandia
 
             Console.WriteLine("Enter the name for your Blue Whale: ");
             string bwName = Console.ReadLine();
-            Musculus whale = new Musculus(bwName);
-            Console.WriteLine(whale.Welcome());
-            Console.WriteLine(whale.Name + " Weighs " + whale.Weight + " lbs.");
-            Console.WriteLine(whale.Name + " is " + whale.Height + " feet long.");
-            Console.WriteLine("Is it true that " + whale.Name + " has a tail? " + whale.Tail.ToString());
-            Console.WriteLine(whale.Name + " has " + whale.fins + " fins ");
-            Console.WriteLine(whale.Move(444));
-            Console.WriteLine(whale.Eat(200));
+            Musculus Whale = new Musculus(bwName);
+            Console.WriteLine(Whale.Welcome());
+            Console.WriteLine(Whale.Name + " Weighs " + Whale.Weight + " lbs.");
+            Console.WriteLine(Whale.Name + " is " + Whale.Height + " feet long.");
+            Console.WriteLine("Is it true that " + Whale.Name + " has a tail? " + Whale.Tail.ToString());
+            Console.WriteLine(Whale.Name + " has " + Whale.fins + " fins ");
+            Console.WriteLine(Whale.Move(444));
+            Console.WriteLine(Whale.Eat(200));
 
             Abelii Orangutan = new Abelii("Ethel");
             Console.WriteLine(Orangutan.Name + " is colored " + Orangutan.Color);
@@ -116,6 +116,46 @@ namespace Zoolandia
             Console.WriteLine(Scorpion.Name + " is colored " + Scorpion.Color);
             Console.WriteLine(Scorpion.Name + " is " + Scorpion.Weight + " grams. and is " + Scorpion.Height + " cm long");
             Console.WriteLine(Scorpion.Eat(3) + " & " + Scorpion.Move(90));
+
+            Aquarium SeaWorld = new Aquarium();
+            SeaWorld.AddA(SeaHorse);
+            SeaWorld.AddA(Goldfish);
+            SeaWorld.AddA(Whale);
+            Console.WriteLine("Welcome to " + nameof(SeaWorld));
+            Console.WriteLine(SeaWorld.Feeding());
+            Console.WriteLine(SeaWorld.Performance());
+
+            Plains Veldtarama = new Plains();
+            Veldtarama.AddA(Zebra);
+            Veldtarama.AddA(Scorpion);
+            Console.WriteLine("Welcome to " + nameof(Veldtarama));
+            Console.WriteLine(Veldtarama.Feeding());
+            Console.WriteLine(Veldtarama.Performance());
+
+            Aviary BirdTown = new Aviary();
+            BirdTown.AddA(Eagle);
+            Console.WriteLine("Welcome to " + nameof(BirdTown));
+            Console.WriteLine(BirdTown.Feeding());
+            Console.WriteLine(BirdTown.Performance());
+
+            Jungle Jungleville = new Jungle();
+            Jungleville.AddA(rhino);
+            Jungleville.AddA(Ape);
+            Jungleville.AddA(Tiger);
+            Jungleville.AddA(Orangutan);
+            Jungleville.AddA(Alligator);
+            Console.WriteLine("Welcome to " + nameof(Jungleville));
+            Console.WriteLine(Jungleville.Feeding());
+            Console.WriteLine(Jungleville.Performance());
+
+            Jungle Forestland = new Jungle();
+            Forestland.AddA(redPanda);
+            Forestland.AddA(Turtle);
+            Forestland.AddA(Sloth);
+            Forestland.AddA(Wolf);
+            Console.WriteLine("Welcome to " + nameof(Forestland));
+            Console.WriteLine(Forestland.Feeding());
+            Console.WriteLine(Forestland.Performance());
 
         }
     }

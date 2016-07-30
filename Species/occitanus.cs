@@ -5,6 +5,7 @@ using System;
         public class Occitanus : Buthus
         {
             public String Color;
+            public string commonName = "Scorpion";
 
             public Occitanus(string name) : base(name)
             {

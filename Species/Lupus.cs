@@ -10,6 +10,7 @@ using System;
 
 
 			public string Color;
+			public string commonName = "Gray Wolf";
 
 			public Lupus(string name) : base(name)
 			{
